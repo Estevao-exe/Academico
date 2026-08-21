@@ -19,9 +19,9 @@ Os arquivos serão organizados por matéria para facilitar a consulta e manter t
 ```text
 📦 Estudos
  ┣ 📂 Algorítmo e pensamento computacional
- ┣ 📂 Front-End
+ ┣ 📂 Banco de Dados
  ┣ 📂 Design
- ┣ 📂 Modelagem Banco de Dados
+ ┣ 📂 Front-End
 ```
 
 ## 🎯 Objetivo
