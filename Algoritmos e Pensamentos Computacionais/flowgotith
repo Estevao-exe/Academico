@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Come&#231;o da calquladora"/>
+        <attribute name="authors" value="ESTEVAOFIGUEIREDOGAR"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-21 09:30:38 "/>
+        <attribute name="created" value="RVNURVZBT0ZJR1VFSVJFRE9HQVI7REYwMS1MQUIwOC0wMjsyMDI2LTA4LTIxOyIwODo0NzoxMCAiOzM0MjI="/>
+        <attribute name="edited" value="RVNURVZBT0ZJR1VFSVJFRE9HQVI7REYwMS1MQUIwOC0wMjsyMDI2LTA4LTIxOyIwOTozMDozOCAiOzE7MzUzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <output expression="&quot;[1]Soma [2] Subtra&#231;&#227;o [3] Multiplica&#231;&#227;o [4] Divis&#227;o [0] ByeBye&quot;" newline="True"/>
+            <input variable="opcao"/>
+            <if expression="opcao = 1">
+                <then>
+                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                    <output expression="&quot;Digite valor de A: &quot;" newline="True"/>
+                    <input variable="a"/>
+                    <output expression="&quot;Digite o valor de B: &quot;" newline="True"/>
+                    <input variable="b"/>
+                    <assign variable="c" expression="a + b"/>
+                    <output expression="&quot;A somas dos numeros s&#227;o: &quot; &amp;c" newline="True"/>
+                </then>
+                <else>
+                    <if expression="opcao = 2">
+                        <then>
+                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                            <output expression="&quot;Digite o valor de A: &quot;" newline="True"/>
+                            <input variable="a"/>
+                            <output expression="&quot;Introduza o valor de B: &quot;" newline="True"/>
+                            <input variable="b"/>
+                            <assign variable="c" expression="a - b"/>
+                            <output expression="&quot;A Subtra&#231;&#227;o da euqua&#231;&#227;o &#233;: &quot; &amp;c" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="opcao = 3">
+                                <then>
+                                    <declare name="a, b, c" type="Real" array="False" size=""/>
+                                    <output expression="&quot;Introduza o primeiro valor: &quot;" newline="True"/>
+                                    <input variable="a"/>
+                                    <output expression="&quot;Introduza o segundo valor: &quot;" newline="True"/>
+                                    <input variable="b"/>
+                                    <assign variable="c" expression="a * b"/>
+                                    <output expression="&quot;A introdu&#231;&#227;o de ambos os numeros, resulta no resultado da multiplica&#231;&#227;o que &#233; igual a: &quot;&amp;c" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="opcao = 4">
+                                        <then>
+                                            <declare name="a, b, c" type="Real" array="False" size=""/>
+                                            <output expression="&quot;Digite o primeiro valor: &quot;" newline="True"/>
+                                            <input variable="a"/>
+                                            <output expression="&quot;Digite o segundo valor: &quot;" newline="True"/>
+                                            <input variable="b"/>
+                                            <assign variable="c" expression="a/b"/>
+                                            <output expression="&quot;O resultado &#233;: &quot;&amp;c" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <breakpoint expression="" always="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
