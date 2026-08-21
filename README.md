@@ -8,10 +8,9 @@ Aqui serão adicionados:
 
 * Conteúdos aprendidos em aula
 * Trabalhos
-* Deveres e atividades
+* Atividades
 * Exercícios
 * Projetos
-* Outros materiais relacionados às matérias
 
 ## 📂 Organização
 
@@ -19,11 +18,10 @@ Os arquivos serão organizados por matéria para facilitar a consulta e manter t
 
 ```text
 📦 Estudos
- ┣ 📂 Matéria 1
- ┣ 📂 Matéria 2
- ┣ 📂 Matéria 3
- ┣ 📂 Matéria 4
- ┗ 📂 ...
+ ┣ 📂 Algorítmo e pensamento computacional
+ ┣ 📂 Front-End
+ ┣ 📂 Design
+ ┣ 📂 Modelagem Banco de Dados
 ```
 
 ## 🎯 Objetivo
