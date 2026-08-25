@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n1, n2, resultado;
+
+    // Pede o primeiro número ao usuário
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &n1);
+
+    // Pede o segundo número ao usuário
+    printf("Digite o segundo numero: ");
+    scanf("%d", &n2);
+
+    // Realiza a subtração
+    resultado = n1 - n2;
+
+    // Exibe o resultado
+    printf("A subtracao e: %d\n", resultado);
+
+    return 0;
+}
