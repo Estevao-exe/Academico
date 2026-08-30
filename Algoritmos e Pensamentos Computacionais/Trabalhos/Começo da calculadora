@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+int main()
+{
+    int escolha;
+    float n1, n2, n3;    
+    
+    while (1){
+    
+    printf("================\n");
+    printf("Calculadora de 4\n");
+    printf("================\n");
+    printf("Escolha uma função!\n");
+    printf("[1] Soma\n");
+    printf("[2] Subtração\n");
+    printf("[3] Dividir\n");
+    printf("[4] Multiplicar\n");
+    printf("[0] Sair\n");
+
+    printf("Qual opção você ira escolher?: ");
+    scanf("%d", &escolha);
+    
+    if (escolha == 0){
+        printf("Vazando baby!...");
+        break;
+    }
+        
+    if (escolha == 1){
+        printf("Digite seu primeiro valor: ");
+        scanf("%f", &n1);
+        printf("Digite seu segundo valor: ");
+        scanf("%f", &n2);
+        
+        n3 = n1 + n2;
+        printf("A soma de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+        
+    }else if (escolha == 2){
+        printf("Digite seu primeiro valor: ");
+        scanf("%f", &n1);
+        printf("Digite seu segundo valor: ");
+        scanf("%f", &n2);
+        
+        n3 = n1 - n2;
+        printf("A subtração de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+    
+        
+    }else if (escolha == 3){
+        printf("Digite seu primeiro valor: ");
+        scanf("%f", &n1);
+        printf("Digite seu segundo valor: ");
+        scanf("%f", &n2);
+        
+        if (n2 == 0){
+            printf("Ei chefe! não da pra dividir o 0 bestão!  ");
+        }else {
+            n3 = n1 / n2;
+            printf("A divisão de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+        }
+            
+        
+        
+    }else if (escolha == 4){
+        printf("Digite seu primeiro valor: ");
+        scanf("%f", &n1);
+        printf("Digite seu segundo valor: ");
+        scanf("%f", &n2);
+        
+        n3 = n1 * n2;
+        printf("A multiplicação de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+    }
+
+}
+
+    return 0;
+}
