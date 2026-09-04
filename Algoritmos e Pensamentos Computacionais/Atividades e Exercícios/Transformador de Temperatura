@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float temperatura;
+    int escolha;
+    
+    while(1) {
+        printf("=====================================\n");
+        printf("    Transormador de temperatura \n");
+        printf("=====================================\n");
+        printf("[1] Celsius para Fahrenheit\n");
+        printf("[2] Fahrenheit para Celsius\n");
+        printf("[3] Celsius para Kelvin\n");
+        printf("[4] Kelvin para Celsius\n");
+        printf("[5] Fahrenheit para Kelvin\n");
+        printf("[6] Kelvin para Fahrenheit\n");
+        printf("[0] Sair\n");
+        printf("====================================\n");
+    
+        printf("Qual conversor você quer?\n");
+        scanf("%d", &escolha);
+    
+        switch (escolha) {
+            case 0:
+                printf("IT'S OVER 🥵\n");
+                return 0;
+            
+                default:
+                    printf("\ntente agai\n");
+                    break;
+        
+            case 1:
+                printf("Digite o valor celsius: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f f\n", (temperatura * 9.0 / 5.0) + 32.0);
+                break;
+                
+            case 2:
+                printf("Digite o valor em Fahrenheit: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f c\n", (temperatura *9.0 / 5.0) - 32.0);
+                break;
+            
+            case 3:
+                printf("Digite o valor em Celsius: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f k\n", temperatura + 273.15);
+                break;
+            
+            case 4:
+                printf("Digite o valor em Kelvin: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f c\n", temperatura - 273.15);
+                break;
+            
+            case 5:
+                printf("Digite o valor em Fahrenheit: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f k\n", (temperatura -32.0) * 5.0 /9.0 + 273.15);
+                break;
+                
+            case 6:
+                printf("Digite o valor em Kelvin: ");
+                scanf("%lf", &temperatura);
+                
+                printf("Resultado: %.2f F\n", (temperatura -273.15) * 9.0/5.0 +32.0 );
+                break;
+        }
+        
+    } while (escolha != 0);
+    
+    return 0;
+}
