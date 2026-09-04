@@ -52,3 +52,4 @@ O principal objetivo deste projeto é desenvolver conhecimentos básicos de prog
 
 
 Este projeto está disponível para fins educacionais e pode ser utilizado e modificado livremente.
+Se gostou do projeto de uma estrela⭐ no repositorio
