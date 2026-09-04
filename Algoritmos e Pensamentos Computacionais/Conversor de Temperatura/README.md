@@ -46,51 +46,9 @@ git clone https://github.com/seu-usuario/conversor-de-temperatura.git
 Acesse a pasta do projeto:
 cd conversor-de-temperatura
 
-Execute o projeto de acordo com a tecnologia utilizada.
-📂 Estrutura do projeto
-conversor-de-temperatura/
-│
-├── README.md
-├── index.html
-├── style.css
-└── script.js
-
-
 A estrutura pode variar dependendo da linguagem ou tecnologia utilizada no desenvolvimento.
-
-🛠️ Tecnologias
-
-Este projeto pode ser desenvolvido utilizando:
-
-HTML5
-CSS3
-JavaScript
-🎯 Objetivo
 
 O principal objetivo deste projeto é desenvolver conhecimentos básicos de programação por meio da criação de uma aplicação simples, funcional e fácil de utilizar.
 
-📸 Demonstração
-
-Adicione aqui uma imagem ou GIF mostrando o funcionamento do conversor:
-
-![Demonstração do projeto](./assets/demo.png)
-
-🤝 Contribuição
-
-Contribuições são bem-vindas!
-
-Faça um fork do projeto.
-Crie uma nova branch:
-git checkout -b minha-feature
-
-Faça suas alterações.
-Realize o commit:
-git commit -m "Adiciona nova funcionalidade"
-
-Envie para o GitHub:
-git push origin minha-feature
-
-Abra um Pull Request.
-📄 Licença
 
 Este projeto está disponível para fins educacionais e pode ser utilizado e modificado livremente.
