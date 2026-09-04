@@ -1,0 +1,227 @@
+faça um readme sobre: Calculadora cientifica em C com 20 funções , #include <stdio.h>
+#include <math.h>
+#ifndef M_PI
+#define M_PI 3.1415
+#endif
+//o <math.h> serve para importar as bibliotecas do C
+//#ifndef Se não tiver definido o M_PI, ele faz uma pergunta ao compilador: "O valor de PI já foi criado antes?"
+//se #ifndef não tiver definido ele vai criar uma constante, 3,14159(PI) 
+//o endif é o fim de se, ele acaba com o ifndef
+
+int main(void) {
+    int escolha;
+    float n1, n2, n3;    
+    
+    while (1) {
+        printf("\n=================================\n");
+        printf("Calculadora de 20 funções\n");
+        printf("===================================\n");
+        printf("Escolha uma função!\n");
+        printf("[1]  Soma\n");
+        printf("[2]  Subtração\n");
+        printf("[3]  Dividir\n");
+        printf("[4]  Multiplicar\n");
+        printf("[5]  Raiz Quadrada\n");
+        printf("[6]  Potencia\n");
+        printf("[7]  Logaritimo\n");
+        printf("[8]  Logaritimo base10\n");
+        printf("[9]  Fatorial\n");
+        printf("[10] Arredondamento para cima\n");
+        printf("[11] Arredondamento para baixo\n");
+        printf("[12] Seno\n");
+        printf("[13] Cosseno\n");
+        printf("[14] Tangente\n");
+        printf("[15] Converter em graus\n");
+        printf("[16] Converter em radianos\n");
+        printf("[17] Exponencial\n");
+        printf("[18] Valor absoluto\n");
+        printf("[19] Separar parte inteira e decimal\n");
+        printf("[20] Converter para binarios\n");
+        printf("[0] Sair\n");
+
+        printf("Qual opção você ira escolher?: ");
+        scanf("%d", &escolha);
+        
+        if (escolha == 0) {
+            printf("Vazando baby!...\n");
+            break;
+        }
+            
+        if (escolha == 1) {
+            printf("Digite seu primeiro valor: ");
+            scanf("%f", &n1);
+            printf("Digite seu segundo valor: ");
+            scanf("%f", &n2);
+            
+            n3 = n1 + n2;
+            printf("A soma de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+            
+        } else if (escolha == 2) {
+            printf("Digite seu primeiro valor: ");
+            scanf("%f", &n1);
+            printf("Digite seu segundo valor: ");
+            scanf("%f", &n2);
+            
+            n3 = n1 - n2;
+            printf("A subtração de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+        
+        } else if (escolha == 3) {
+            printf("Digite seu primeiro valor: ");
+            scanf("%f", &n1);
+            printf("Digite seu segundo valor: ");
+            scanf("%f", &n2);
+            
+            if (n2 == 0) {
+                printf("Ei chefe! não da pra dividir por 0 bestão!\n");
+            } else {
+                n3 = n1 / n2;
+                printf("A divisão de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+            }
+                
+        } else if (escolha == 4) {
+            printf("Digite seu primeiro valor: ");
+            scanf("%f", &n1);
+            printf("Digite seu segundo valor: ");
+            scanf("%f", &n2);
+            
+            n3 = n1 * n2;
+            printf("A multiplicação de %.2f e %.2f é: %.2f\n", n1, n2, n3);
+            
+        } else if (escolha == 5) {
+            printf("Me diga um valor para a sua Raiz Quadrada: ");
+            scanf("%f", &n1);
+            if (n1 < 0) {
+                printf("Amegão não tem Raiz de numero real\n");
+            } else {
+                n3 = sqrt(n1);
+                printf("Raiz de %.2f = %.2f\n", n1, n3);
+            } 
+            
+        } else if (escolha == 6) {
+            printf("Me fale uma base: ");
+            scanf("%f", &n1);
+            printf("Me fale um expoente: ");
+            scanf("%f", &n2);
+            n3 = pow(n1, n2);
+            printf("%.2f elevado a %.2f = %.2f\n", n1, n2, n3);
+            
+        } else if (escolha == 7) {
+            printf("Valor para log natural (In): ");
+            scanf("%f", &n1);
+            if (n1 <= 0) {
+                printf("Erro: O valor deve ser maior que zero.\n");
+            } else {
+                printf("In(%.2f) = %.4f\n", n1, log(n1));
+            }
+            
+        } else if (escolha == 8) {
+            printf("Valor para log10: ");
+            scanf("%f", &n1);
+            if (n1 <= 0) {
+                printf("erro\n");
+            } else {
+                printf("log10(%.2f) = %.4f\n", n1, log10(n1));
+            }
+        
+        } else if (escolha == 9) {
+            int num, i;
+            long long fat = 1;
+            printf("Valor inteiro do fatorial: ");
+            scanf("%d", &num);
+            if (num < 0) {
+                printf("Não tem fatorial negativo bro!\n");
+            } else {
+                for (i = 1; i <= num; i++) {
+                    fat *= i;
+                }
+                printf("Fatorial de %d = %lld\n", num, fat);
+            }
+            
+        } else if (escolha == 10) {
+            printf("Valor: ");
+            scanf("%f", &n1);
+            printf("Arredondamento para cima: %.0f\n", ceil(n1));
+       
+        } else if (escolha == 11) {
+            printf("Valor: ");
+            scanf("%f", &n1);
+            printf("Arredondamento para baixo: %.0f\n", floor(n1));
+            
+        } else if (escolha == 12) {
+            printf("Digite o Angulo em Radianos(sen): ");
+            scanf("%f", &n1);
+            printf("seno(%.2f) = %.4f\n", n1, sin(n1));
+            
+        } else if (escolha == 13) {
+            printf("Digite o Angulo em(cos): ");
+            scanf("%f", &n1);
+            printf("cos(%.2f) = %.4f\n", n1, cos(n1));
+            
+        } else if (escolha == 14) {
+            printf("Digite um angulo(tang): ");
+            scanf("%f", &n1);
+            printf("tan(%.2f) = %.4f\n", n1, tan(n1));
+            
+        } else if (escolha == 15) {
+            printf("Valor em Radianos: ");
+            scanf("%f", &n1);
+            printf("%.4f rad = %.4f graus\n", n1, n1 * 180.0 / M_PI);
+            
+        } else if (escolha == 16) {
+            printf("Valor em graus: ");
+            scanf("%f", &n1);
+            printf("%.4f graus = %.4f rad\n", n1, n1 * M_PI / 180.0);
+            
+        } else if (escolha == 17) {
+            printf("Diga-me um valor para ^X: ");
+            scanf("%f", &n1);
+            printf("exp(%.2f) = %.4f\n", n1, exp(n1));
+            
+        } else if (escolha == 18) {
+            printf("Valor: ");
+            scanf("%f", &n1);
+            printf("Valor absoluto = %.2f\n", fabs(n1));
+            
+        } else if (escolha == 19) {
+            double parteinteira;
+            double partedecimal;
+            printf("Valor: ");
+            scanf("%f", &n1);
+            partedecimal = modf(n1, &parteinteira);
+            printf("Parte inteira: %.0f | Parte decimal: %.4f\n", parteinteira, partedecimal);
+           
+        } else if (escolha == 20) {
+            int num;
+            printf("Valor para ser convertido em binarios: ");
+            scanf("%d", &num);
+            printf("binario de %d = ", num);
+            
+            // Lógica simplificada e funcional para exibir binários sem zeros à esquerda inúteis
+            int stop = 0;
+            for (int i = 31; i >= 0; i--) {
+                int k = num >> i;
+                if (k & 1) {
+                    printf("1");
+                    stop = 1;
+                } else {
+                    if (stop) printf("0"); // Só printa zero após o primeiro '1'
+                }
+            }
+            if (!stop) printf("0"); // Se o número for zero
+            printf("\n");
+        }
+    }
+    
+    return 0;
+}
+
+//-----------------Bibliotecas Ultilizadas---------------
+//sqrt() -> Raizpow() -> Potêncialog() -> Logaritmo naturallog10() -> Log base 10ceil()
+//-> Arredonda pra cimafloor() -> Arredomda pra baixo sin(), cos(), tan() -> Seno, Cosseno, Tangenteexp()
+//-> Exponencial (e^x)fabs() -> Valor absolutomodf()
+//-> Separar parte inteira e decimal[5][6][7][8][10][11][12][13][14][17][18][19]
+//Fatorial e o Binário -> Não tem biblioteca.
+//A gente fez no seco com for e com >> / %.[15] e [16] Graus/Radianos -> É só conta, * 180 / PI.
+//for - É o contador / repetidorServe para repetir uma coisa várias vezes o % é u resto da divisão.
+//No Binário a gente usou pra saber se é 0 ou 1:cn % 2  // se for 0, é par. Se for 1, é ímparTodo número binário é feito de restos de divisões por 2.
+//O PI eu criei com #define PI 3.14159..., não é uma biblioteca :( [9][20]
