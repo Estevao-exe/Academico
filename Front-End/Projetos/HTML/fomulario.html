@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        label{display: block; margin-bottom:  10px;}
+    </style>
+
+</head>
+<!--entrada tipo dado-->
+<body>
+    <form action="" method="get">
+<!--Entrada de nome-->
+        <label>nome
+                <input type="text" name="nome" placeholder="Seu nome bb">
+        </label>
+<!--Entrada de Email-->    
+        <label>E-mail
+            <input type="email" name="email" placeholder="Seu best e-mail">
+        </label>
+<!--Idade-->    
+        <label>idade
+                <input type="number" name="idade" min="1" max="130">
+        </label>
+<!--Data de nascimento-->
+        <label>Data de Nascimento
+            <input type="date" name="data_nasc">
+        </label>
+<!--Mascarar a senha, mas não é criptografada-->
+        <label>Senha
+            <input type="password" name="senha" placeholder="Insira sua senha danado">
+        </label>
+<!--Arquivos-->
+        <label>
+            <input type="file" name="arquivo">
+        </label>
+<!--Escolher GEnero, só pode escolher 1-->
+        <label>Gênero</label>
+        <label><input type="radio" name="gerero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="gerero" value="feiminino"> Feiminino</label>
+        <label><input type="radio" name="gerero" value="outros"> Outros</label>
+<!--Escolher o Esporte, pode varios-->
+        <label>Esportes</label>
+        <label><input type="checkbox" name="esportes" value="futebol"> Futebol</label>
+        <label><input type="checkbox" name="esportes" value="volei"> Volei</label>
+        <label><input type="checkbox" name="esportes" value="natacao"> Natacao</label>
+        <label><input type="checkbox" name="esportes" value="basquete"> Basquete</label>
+<!--Ecolher região-->
+        <label>UF</label>
+        <select name="uf">
+            <optgroup label="Centro-Oeste">
+                <option value="DF">DF</option>
+                <option value="DF">DF</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="MA">MA</option>
+                <option value="PI">PI</option>
+            </optgroup>
+        </select>
+            <label>Mensagem
+                <textarea name="mensagem" rows="5" cols="40"></textarea>
+            </label>
+
+            <input type="hidden" name="conteudo-oculto">
+
+            <button type="submit">Enviar</button>
+        
+    </form>
+</body>
+</html>
