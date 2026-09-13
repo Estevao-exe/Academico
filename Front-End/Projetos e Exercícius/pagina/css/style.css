@@ -18,7 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #858C4A;
+    background-color: #014017;
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,7 +30,7 @@ header{
 .logo{
     font-size: 2rem;
     font-family: 700;
-    color: #F2D4AE;
+    color: #c8ff00;
     text-shadow: 1px 1px #000000;
     text-decoration: none;
     padding-left: 20px;
@@ -52,11 +52,11 @@ header{
 }
 
 .navbar a:hover, .navbar a:active{
-    background-color: #533CA6;
+    background-color: #02732A
 }
 
 #hero{
-    background-image: url('../img/hero.jpg');
+    background-image: url('../img/hero2.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -69,6 +69,10 @@ h1{
     font-size: 3rem;
 }
 
+#futbol{
+    background-color: #3f90ee;
+}
+
 section{
     padding: 50px 20px;
     min-height: 100vh;
@@ -78,7 +82,7 @@ section{
 }
 
 #about{
-    background-color: #A7C8F2;
+    background-color: #D9A404
 }
 
 #about p{
@@ -90,7 +94,8 @@ section{
 }
 
 #gallery{
-    background-color: #4e90e7;
+    background-color: #014017;
+
     display: block;
     text-align: center;
 }
@@ -143,7 +148,7 @@ section{
 }
 
 #contact button{
-    background-color: #533CA6;
+    background-color: #014017;
     color: #ffffff;
     font-size: 1.6rem;
     padding: 12px;
@@ -159,7 +164,7 @@ section{
 }
 
 footer{
-    background-color: #858C4A;
+    background-color: #3bac2c;
     padding: 20px 10px;
     text-align: center;
     color: #0d0d0d;
@@ -170,3 +175,4 @@ footer a{
     text-decoration: none;
     font-weight: bold;
 }
+
