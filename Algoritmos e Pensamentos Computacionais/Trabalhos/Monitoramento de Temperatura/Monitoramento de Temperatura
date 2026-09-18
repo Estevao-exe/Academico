@@ -8,6 +8,7 @@ int main() {
     float media;
     float maior;
     float menor;
+    float percentual;
 
     int consecutivas = 0;
     int quantidade = 0;
@@ -17,7 +18,7 @@ int main() {
     printf("  Monitoramento de temperatura 🥵  \n");
     printf("===================================\n");
 
-    printf("\nDigite o limite da temperatura🌡: ");
+    printf("Digite o limite da temperatura: ");
     scanf("%f", &limite);
 
     while (consecutivas < 3) {
@@ -51,13 +52,16 @@ int main() {
 
     media = soma / quantidade;
 
+    percentual = ((float)acima_limite / quantidade) * 100;
+
     printf("\n===== RELATORIO =====\n");
     printf("Quantidade: %d\n", quantidade);
     printf("Maior temperatura: %.2f\n", maior);
     printf("Menor temperatura: %.2f\n", menor);
     printf("Media: %.2f\n", media);
     printf("Acima do limite ⚠: %d\n", acima_limite);
-    printf("=======================");
+    printf("Percentual acima do limite❗: %.2f%%\n", percentual);
+    printf("=======================")
 
     return 0;
 }
