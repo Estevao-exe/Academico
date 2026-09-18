@@ -3,8 +3,11 @@
 ## 1. Identificação
 
 **Aluno:** Estevão Figueiredo Garcia
+
 **Disciplina:** Algoritmos e Pensamentos Computacionais
+
 **Professora:** Karla Sartin
+
 **Título do projeto:** Monitoramento de Temperatura
 
 ---
