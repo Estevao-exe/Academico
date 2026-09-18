@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main() {
+
+    float temp;
+    float limite;
+    float soma = 0;
+    float media;
+    float maior;
+    float menor;
+
+    int consecutivas = 0;
+    int quantidade = 0;
+    int acima_limite = 0;
+    
+    printf("===================================\n");
+    printf("  Monitoramento de temperatura 🥵  \n");
+    printf("===================================\n");
+
+    printf("\nDigite o limite da temperatura🌡: ");
+    scanf("%f", &limite);
+
+    while (consecutivas < 3) {
+
+        printf("Digite a temperatura: ");
+        scanf("%f", &temp);
+
+        quantidade++;
+        soma = soma + temp;
+
+        if (quantidade == 1) {
+            maior = temp;
+            menor = temp;
+        }
+
+        if (temp > maior) {
+            maior = temp;
+        }
+
+        if (temp < menor) {
+            menor = temp;
+        }
+
+        if (temp > limite) {
+            acima_limite++;
+            consecutivas++;
+        } else {
+            consecutivas = 0;
+        }
+    }
+
+    media = soma / quantidade;
+
+    printf("\n===== RELATORIO =====\n");
+    printf("Quantidade: %d\n", quantidade);
+    printf("Maior temperatura: %.2f\n", maior);
+    printf("Menor temperatura: %.2f\n", menor);
+    printf("Media: %.2f\n", media);
+    printf("Acima do limite ⚠: %d\n", acima_limite);
+    printf("=======================");
+
+    return 0;
+}
