@@ -127,22 +127,22 @@ Quando o contador chega a 3, o laço é encerrado.
 
 ## 5. Como executar
 
-Para compilar o programa utilizando o GCC, abra o terminal na pasta onde está o arquivo `monitoramento.c` e execute:
+Para compilar o programa utilizando o GCC, abra o terminal na pasta onde está o arquivo `monitoramento_temperatura` e execute:
 
 ```bash
-gcc monitoramento.c -o monitoramento
+gcc monitoramento_temperatura -o monitoramento
 ```
 
 Depois, execute o programa:
 
 ```bash
-./monitoramento
+./monitoramento_temperatura
 ```
 
 No Windows, caso necessário, o executável poderá ser executado como:
 
 ```bash
-monitoramento.exe
+monitoramento_temperatura.exe
 ```
 
 ---
@@ -250,10 +250,11 @@ Ao finalizar o monitoramento, o programa apresenta informações sobre as temper
 * menor temperatura;
 * média das temperaturas;
 * quantidade de temperaturas acima do limite;
+* percentual de temperaturas acima do limit;
 
 Essas informações permitem analisar os dados coletados durante o monitoramento.
 
-
+## 
 
 ## 8. Reflexão final
 
