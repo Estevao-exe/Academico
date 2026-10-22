@@ -1,0 +1,250 @@
+// console.log("oi, bixa?"); //(Ctrl e ; pra comentar)
+//-------Maior de idade--------------------------------------------------------------
+
+
+// let idade = Number(prompt("Entre com sua idade: "));
+
+
+// if(idade >= 18){
+//     alert("Sua idade é: " + idade + ", Você é maior de idade, vai trabalhar vagabundo");
+// }else{
+//     alert("Sua idade é: " + idade + ", Tu eres menor de idade bro, sai daqui e vai trocar sua fralda");
+// }
+
+
+//------Meida do aluno---------------------------------------------------------------
+
+
+ let nota1 = Number(prompt("Digite la primeira nota: "));
+ let nota2 = Number(prompt("Digite la segunda nota: "));
+ let nota3 = Number(prompt("Digite la terceira nota: "));
+
+
+ let media = (nota1 + nota2 + nota3) / 3;
+
+
+ if(media >= 9){
+     alert("Sua media foi de" + media + "é Exelente bro");
+ }else if(media >=6){
+     alert("Sua media foi de " + media + ". Aprovado");
+ }else{
+     alert("Sua media foi de: " + media + ".Reprovado");
+ }
+//----Dia da semana---------------------------------------------------------------------
+
+
+ let dia = Number(prompt("Digite o dia da semana em numeros: "));
+
+
+ switch(dia){
+     case 1:
+         alert("Domimgo");
+         break;
+     case 2:
+         alert("Segunda-Feira");
+         break;
+     case 3:
+         alert("Terça-Feira");
+         break;
+     case 5:
+         alert("Quarta-Feira");
+         break;
+     case 6:
+         alert("Quinta-Feira");
+         break;
+     case 7:
+         alert("Sexta-Feira");
+         break;
+     case 8:
+         alert("Sábado!!!");
+         break;
+     default:
+         alert("Digite um numero entre 1 a 8")
+ }
+
+
+//-=============Saldo de conta 1==========================================================
+ let saldo = Number(prompt("Qual seu saldo: "));
+
+
+ let valorcompra = 150;
+
+
+ if(saldo >= 150){
+     alert("Saldo sufucuente para conta");
+ }else{
+     alert("Saldo insulficiente");
+}
+
+//===============Numero positivo, negativo 2===========================================
+
+
+ let numero= Number(prompt("Digite um numero qualquer: "));
+
+
+ if(numero >0){
+     alert("Valor: " + numero + " Positivo");
+ }else if(numero <0){
+     alert("Valor: " + numero + " Negativo");
+ }else{
+     alert("Valor igual a 0");
+ }
+
+
+//====Atividade 3==================================================================
+
+
+ let valorcompra = Number(prompt("Qual o valor da compra: "));
+ let desconto = valorcompra * 0.1;
+ let valorDesconto = valorcompra - desconto;
+
+
+ if(valorcompra >= 200){
+     alert("Com o desconto de " + valorDesconto + " Reais");
+ }else{
+     alert("Preço normal de: " + valorcompra + " Original");
+ }
+
+
+//===========switch case 4=================================
+
+
+ let transporte = Number(prompt("Qual o transporte que ira escolher em numeros: "));
+
+
+ switch(transporte){
+     case 1:
+         alert("Carro");
+         break;
+     case 2:
+         alert("Moto");
+         break;
+     case 3:
+         alert("Bicicleta");
+         break;
+     case 4:
+         alert("Onibus");
+         break;
+      default:
+          alert("Digite um numero entre 1 e 4");
+ }
+
+
+//===========Calculatior 5===========================================
+
+
+ let operação = Number(prompt("Qual operação de 1 a 4 você quer: "));
+
+
+ let n1 = Number(prompt("Digite o primeiro numero: "));
+ let n2 = Number(prompt("Digite o segundo numero: "));
+
+
+
+
+ switch(operação){
+     case 1:
+         operação = n1 + n2;
+         alert("Adição: " + operação);
+         break;
+     case 2:
+         operação = n1 - n2;
+         alert("subtração: " + operação);
+         break;
+     case 3:
+         operação = n1 * n2;
+         alert("Multiplicação: " + operação);
+         break;
+     case 4:
+         operação = n1 / n2;
+         alert("Divisão: " +operação);
+         break;
+     default:
+         alert("Digite um numero entre 1 e 4");
+ }
+
+
+//=======Atividade 6================================================
+
+
+ let pedido = Number(prompt("Qual o pedido entre 1 e 4 : "));
+ switch(pedido){
+     case 1:
+         alert("Hamburguer R$:18.00 ");
+         break;
+     case 2:
+         alert("Pizza R$:35,00 ");
+         break;
+     case 3:
+         alert("Cachorro-Quente R$:12,00 ");
+         break;
+     case 4:
+         alert("Refrigerante R$:7,00 ");
+         break;
+     default:
+         alert("Digite um numero entre 1 e 4");
+ }
+
+
+//=====Laço FOR==================================================
+
+
+ for(let i = 1; i <= 5; i++){
+     console.log(i);
+ }
+
+
+ let numero = 2;
+
+
+ for(let j = 0; j <= 10; j++){
+     console.log(numero + " X " + j + " = " + (numero * j));
+ }
+
+
+//======Laço White teste===============================================
+
+
+ let contador = 1;
+
+
+ while(contador <= 10){
+     console.log(contador);
+     contador ++;
+ }
+
+
+ let numero = 5;
+
+
+ do{
+     console.log(numero);
+     numero ++;
+ }while(numero> 10);
+
+
+//=======exercicios 1====
+
+
+ for(let i = 2; i < 50; i+= 2){
+     console.log(i);
+
+
+}
+
+
+//====2====================
+
+
+for(let i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+
+let numero = 2;
+
+
+for(let j = 0; j <= 10; j++){
+    console.log(numero + " X " + j + " = " + (numero * j));
+}
+
