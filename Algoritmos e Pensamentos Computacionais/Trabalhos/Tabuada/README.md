@@ -1,56 +1,86 @@
-# 🧮 Tabuada em C
+# 🧮 Tabuada de Operações Matemáticas em C
 
-Um exercício simples desenvolvido em **C** para praticar estruturas de repetição e operações matemáticas.
+## 📌 Sobre o projeto
 
-## 📋 Sobre o projeto
+Este projeto consiste em um programa desenvolvido na linguagem **C** que realiza operações matemáticas utilizando o número 8.
 
-O programa solicita ao usuário um número e, em seguida, exibe sua tabuada do **1 ao 10**.
+O programa permite que o usuário escolha uma das quatro operações matemáticas disponíveis: adição (+), subtração (-), multiplicação (*) ou divisão (/).
 
-## ⚙️ Funcionamento
+Após escolher o operador, o programa apresenta os resultados da operação entre o número 8 e os números de 1 até 10.
 
-O programa:
+## ⚙️ Funcionalidades
 
-1. Solicita um número ao usuário.
-2. Inicia um contador em `1`.
-3. Realiza a multiplicação do número pelo contador.
-4. Exibe o resultado.
-5. Incrementa o contador.
-6. Repete o processo até chegar ao `10`.
+O programa oferece quatro operações matemáticas:
 
-## 🧠 Conceitos praticados
+- **Adição (+):** soma o número 8 com os números de 1 a 10.
+- **Subtração (-):** subtrai os números de 1 a 10 do número 8.
+- **Multiplicação (*):** multiplica o número 8 pelos números de 1 a 10.
+- **Divisão (/):** divide o número 8 pelos números de 1 a 10.
 
-* Variáveis
-* Entrada de dados com `scanf`
-* Saída de dados com `printf`
-* Operações matemáticas
-* Incremento (`i++`)
-* Estrutura de repetição `do...while`
+## 💻 Tecnologias utilizadas
 
-## 💻 Exemplo
+- Linguagem C
+- Biblioteca `stdio.h`
+- Estruturas condicionais (`if` e `else if`)
+- Estruturas de repetição (`for`)
+- Variáveis inteiras (`int`)
+- Variáveis do tipo caractere (`char`)
+- Entrada de dados com `scanf()`
+- Exibição de resultados com `printf()`
 
-```text
-Digite um numero para ver a tabuada: 5
+## ▶️ Como executar o programa
 
-5 X 1 = 5
-5 X 2 = 10
-5 X 3 = 15
-5 X 4 = 20
-5 X 5 = 25
-5 X 6 = 30
-5 X 7 = 35
-5 X 8 = 40
-5 X 9 = 45
-5 X 10 = 50
+1. Tenha um compilador C instalado, como GCC.
+2. Salve o código em um arquivo com extensão `.c`.
+3. Abra o terminal na pasta onde o arquivo está localizado.
+4. Compile o programa utilizando:
+
+```bash
+gcc main.c -o calculadora
 ```
 
-## 🛠️ Tecnologia
+5. Execute o programa:
 
-* C
+```bash
+./calculadora
+```
 
-## 🎯 Objetivo
+No Windows, execute:
 
-Praticar estruturas de repetição e desenvolver minha lógica de programação utilizando a linguagem C.
+```bash
+calculadora.exe
+```
 
-## 👨‍💻 Autor
+## 📝 Exemplo de execução
 
-Estevão Figueiredo
+**Entrada:**
+
+```text
+Digite o operador(+,-,*,/):
+*
+```
+
+**Saída:**
+
+```text
+8 * 1 = 8
+8 * 2 = 16
+8 * 3 = 24
+8 * 4 = 32
+8 * 5 = 40
+8 * 6 = 48
+8 * 7 = 56
+8 * 8 = 64
+8 * 9 = 72
+8 * 10 = 80
+```
+
+## 🎯 Objetivo do projeto
+
+O objetivo deste projeto é praticar conceitos fundamentais da programação em C, principalmente estruturas condicionais, laços de repetição, variáveis e operações matemáticas.
+
+Além disso, o exercício ajuda a desenvolver a lógica de programação por meio da criação de uma pequena calculadora baseada no número 8.
+
+---
+
+**Projeto desenvolvido para fins acadêmicos e de aprendizagem da linguagem C.**
