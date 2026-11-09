@@ -41,7 +41,9 @@ Kelvin → Fahrenheit
 
 💻 Como executar
 Clone este repositório:
-git clone https://github.com/Estevao-exe/Academico/blob/main/Algoritmos%20e%20Pensamentos%20Computacionais/Conversor%20de%20Temperatura/Conversor%20de%20Temperatura
+git clone --filter=blob:none --sparse https://github.com/Estevao-exe/Academico.git
+cd Academico
+git sparse-checkout set "Algoritmos e Pensamentos Computacionais/Conversor de Temperatura"
 
 
 Acesse a pasta do projeto:
