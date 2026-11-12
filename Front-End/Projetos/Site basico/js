@@ -1,0 +1,37 @@
+let botao = document.getElementById("botaoTema");
+let icone = document.getElementById("iconeTema");
+let textoBotao = document.getElementById("textoTema");
+let mensagem = document.getElementById("mensagem");
+
+
+botao.addEventListener("click", function(){
+    //adiciona ou remove o tema escuro
+    document.body.classList.toggle("escuro");
+
+
+    //verifica se o tema está escuro
+    if(document.body.classList("escuro")){
+        icone.innerHTML = "&#9728";
+        textoBotao.textContent = "Modo claro";
+        mensagem.textContent = "Estamos no modo claro";
+    }else{
+        icone.innerHTML = "&#9790";
+        textoBotao.textContent = "Modo escuro";
+        mensagem.textContent = "Estamos ultilizando o modo claro"
+    }
+});
+
+
+
+
+//cursor
+
+
+let cursor = document.getElementById("cursor");
+
+
+document.addEventListener("mousemove", function(evento){
+    cursor.style.left = evento.clientX + "px";
+    cursor.style.top = evento.clientY + "px";
+});
+
