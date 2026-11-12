@@ -25,12 +25,15 @@ Um projeto simples e prático desenvolvido para estudar e praticar a manipulaç�
 
 ## 🔧 Como Executar o Projeto
 
-1. Clone este repositório ou baixe os arquivos:
+1. Baixe os arquivos:
    ```bash
-   git clone https://github.com
+   index.htms
+   style.css
+   script.js
    ```
 2. Certifique-se de que os arquivos `index.html`, `style.css` e `script.js` estejam na mesma pasta.
-3. Abra o arquivo `index.html` diretamente no seu navegador de preferência (Chrome, Firefox, Edge, etc.).
+3. É necessário por os arquivos no VScode ou em outro compilador de codigo
+4. Abra o arquivo `index.html` diretamente no seu navegador de preferência (Chrome, Firefox, Edge, etc.).
 
 ## 📝 Notas de Aprendizado
 
