@@ -24,13 +24,15 @@ MySQL: Sistema de gerenciamento de banco de dados.
 SQL: Linguagem utilizada para criação, manipulação e consulta dos dados.
 
 MySQL Workbench: Ferramenta que pode ser utilizada para executar e administrar o banco de dados.
+
 ## 🗄️ Estrutura do banco de dados
 
 O banco de dados utilizado no projeto possui o nome GiGa_GYM e é composto por 14 tabelas principais, responsáveis por armazenar e relacionar as informações da academia.
 
 ## 📋 Tabelas e suas funcionalidades
+```
 Tabela	Descrição
-tb_plano	Armazena os planos disponíveis, duração e valores mensais.
+tb_plano	Armazena os planos disponíveis, duração e valores mensais. 
 tb_servico	Registra os serviços e modalidades oferecidos pela academia.
 tb_plano_servico	Relaciona os planos aos serviços disponíveis.
 tb_funcionario	Armazena os dados dos funcionários e seus cargos.
@@ -44,7 +46,7 @@ tb_fornecedor	Armazena os dados dos fornecedores.
 tb_produto	Registra os produtos comercializados e suas quantidades em estoque.
 tb_venda	Armazena as vendas realizadas pelos funcionários.
 tb_item_produto	Registra os produtos, preços e quantidades de cada venda.
-
+```
 ### 🔗 Relacionamentos do banco de dados
 
 O projeto utiliza relacionamentos entre tabelas por meio de chaves primárias (PRIMARY KEY) e chaves estrangeiras (FOREIGN KEY).
@@ -115,6 +117,7 @@ Data de vencimento.
 Forma de pagamento.
 Valor pago.
 Matrícula relacionada.
+
 6. Avaliações físicas
 
 A tabela tb_avaliacao_fisica permite registrar informações sobre o acompanhamento físico dos clientes.
@@ -157,7 +160,7 @@ Recebe um cargo como parâmetro e retorna os nomes dos funcionários que possuem
 
 Essas funções permitem reutilizar consultas e facilitar a obtenção de informações específicas.
 
-⚡ Triggers (Gatilhos)
+## ⚡ Triggers (Gatilhos)
 
 Uma das principais funcionalidades do projeto é a implementação de cinco triggers responsáveis pelo controle automático do estoque e pela atualização dos valores das vendas.
 
@@ -170,10 +173,11 @@ trg_item_ai_atualizar_estoque_total	AFTER INSERT	Dá baixa no estoque e recalcul
 trg_item_bu_validar_alteracao	BEFORE UPDATE	Valida os dados e verifica se existe estoque suficiente para a alteração.
 trg_item_au_reajustar_estoque_total	AFTER UPDATE	Ajusta o estoque e recalcula os valores das vendas após alterações.
 trg_item_ad_estornar_estoque_total	AFTER DELETE	Devolve ao estoque os produtos excluídos e atualiza o total da venda.
-🔍 Regras de negócio implementadas nos triggers
+
+### 🔍 Regras de negócio implementadas nos triggers
 
 O controle automático segue algumas regras:
-
+```
 A quantidade de produtos vendidos deve ser um número inteiro maior que zero.
 O preço unitário não pode ser nulo ou negativo.
 Não é permitido vender produtos inexistentes.
@@ -182,6 +186,7 @@ Ao inserir um produto em uma venda, o estoque é reduzido automaticamente.
 Ao alterar a quantidade ou o produto de um item, o estoque é ajustado.
 Ao excluir um item de uma venda, a quantidade correspondente retorna ao estoque.
 O valor total da venda é recalculado automaticamente com base nos itens registrados.
+```
 
 Dessa maneira, o banco de dados consegue manter o estoque e os valores das vendas sincronizados com as operações realizadas.
 
@@ -189,7 +194,8 @@ Dessa maneira, o banco de dados consegue manter o estoque e os valores das venda
 
 O projeto apresenta diversas consultas utilizando diferentes recursos da linguagem SQL.
 
-Consultas básicas
+Consultas básicas:
+---
 SELECT para visualizar registros.
 WHERE para filtrar informações.
 ORDER BY para ordenar resultados.
@@ -226,7 +232,7 @@ Instrutores e seus registros CREF.
 Serviços disponíveis em cada plano.
 Turmas e seus respectivos instrutores.
 Vendas e funcionários responsáveis.
-
+---
 # 🚀 Como executar o projeto
 
 Para executar o projeto, é necessário possuir o MySQL instalado ou utilizar uma ferramenta de gerenciamento compatível, como o MySQL Workbench.
@@ -262,7 +268,7 @@ GiGa_GYM/
 ├── README.md
 │
 ├── GiGaGYM - Academia/
-│   └── GiGa_GYM.sql
+│   └── GIGA.GYM.sql
 │
 └── docs/
     └── modelo_relacional.png
@@ -276,6 +282,7 @@ modelo_relacional.png: diagrama com as tabelas e seus relacionamentos.
 
 Durante o desenvolvimento do projeto, foram trabalhados os seguintes conceitos:
 
+```
 Modelagem de banco de dados relacionais.
 Criação e manipulação de tabelas.
 Chaves primárias e estrangeiras.
@@ -289,6 +296,7 @@ Criação de funções armazenadas.
 Criação de triggers.
 Integridade e consistência dos dados.
 Automação do controle de estoque.
+```
 
 ## 👨‍💻 Considerações finais
 
