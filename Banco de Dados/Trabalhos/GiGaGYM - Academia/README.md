@@ -253,8 +253,9 @@ Observação: o script foi desenvolvido para MySQL. Recomenda-se executá-lo em 
 
 📁 Organização sugerida dos arquivos
 
-Para facilitar a organização do projeto no GitHub, recomenda-se a seguinte estrutura:
+Para facilitar a organização do projeto no GitHub, recomenda-se a seguinte estrutura
 
+```
 text
 GiGa_GYM/
 │
@@ -265,6 +266,7 @@ GiGa_GYM/
 │
 └── docs/
     └── modelo_relacional.png
+```
 
 README.md: documentação e apresentação do projeto.
 giga_gym.sql: script completo de criação e alimentação do banco.
@@ -299,8 +301,14 @@ O projeto representa uma aplicação prática dos conceitos de banco de dados, s
 Esse projeto foi realizado com participação de 
 
 ```
- Daniel, Luan, Pedro, Nicolas e Estevão 
+ Estevão, Daniel, Nicolas, Luan e Pedro 
 ```
 ### GitHub
+
+- [![GitHub](https://img.shields.io/badge/GitHub-Estevão-181717?logo=github&logoColor=white)](https://github.com/Estevão-exe)
+- [![GitHub](https://img.shields.io/badge/GitHub-Daniel-181717?logo=github&logoColor=white)](https://github.com/Danyel-xp)
+- [![GitHub](https://img.shields.io/badge/GitHub-Nicolas-181717?logo=github&logoColor=white)](https://github.com/NicolasWebMaster)
+- [![GitHub](https://img.shields.io/badge/GitHub-Luan-181717?logo=github&logoColor=white)](https://github.com/Luandos)
+- [![GitHub](https://img.shields.io/badge/GitHub-Pedro-181717?logo=github&logoColor=white)](https://github.com/pedrohenriquenlins-prog)
 
 GiGa GYM — Organização, tecnologia e desempenho! 💪
