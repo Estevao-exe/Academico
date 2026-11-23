@@ -1,3 +1,5 @@
+<img align="right" width="100" src="img/teste.gif" alt="scary boy"/>
+
 # 📚 Repositório Acadêmico
  
 Repositório para organizar conteúdos, atividades, trabalhos e projetos desenvolvidos durante meus estudos.
@@ -35,6 +37,8 @@ Repositório para organizar conteúdos, atividades, trabalhos e projetos desenvo
 ---
  
 ## 🧰 Tecnologias e ferramentas
+
+<img align="right" width="100" src="img/cool.gif" alt="scary boy"/>
  
 ### Por disciplina
  
