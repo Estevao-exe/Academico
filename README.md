@@ -38,10 +38,10 @@ Repositório para organizar conteúdos, atividades, trabalhos e projetos desenvo
  
 ## 🧰 Tecnologias e ferramentas
 
-<img align="right" width="100" src="img/cool.gif" alt="scary boy"/>
- 
 ### Por disciplina
- 
+
+<img align="right" width="100" src="img/gatoRoblox.jfif" alt="scary boy"/>
+
 | Disciplina | Tecnologias |
 | :--- | :--- |
 | 🧠 **Algoritmos e Pensamento Computacional** | <img src="https://go-skill-icons.vercel.app/api/icons?i=python,c&theme=dark" height="40" alt="Python e C"/> |
