@@ -1,29 +1,49 @@
-# Academico
+# Repositório Acadêmico
 
-Este repositório tem como objetivo organizar e armazenar os conteúdos relacionados às matérias estudadas.
+Este repositório reúne e organiza materiais, atividades e projetos desenvolvidos durante meus estudos.
+
+## 📚 Disciplinas
+
+- Algoritmos e Pensamento Computacional
+- Banco de Dados
+- Design Profissional
+- Desenvolvimento Front-End
 
 ## 📖 Conteúdos
 
-Aqui serão adicionados:
+Cada pasta pode conter:
 
-* Conteúdos aprendidos em aula
-* Trabalhos
-* Atividades
-* Exercícios
-* Projetos
+- Anotações e conteúdos estudados em aula
+- Trabalhos e atividades
+- Exercícios
+- Projetos
 
 ## 📂 Organização
 
-Os arquivos serão organizados por matéria para facilitar a consulta e manter tudo organizado.
-
 ```text
-📦 Estudos
- ┣ 📂 Algorítmo e pensamento computacional
+📦 Academico
+ ┣ 📂 Algoritmos e Pensamento Computacional
  ┣ 📂 Banco de Dados
- ┣ 📂 Design
- ┣ 📂 Front-End
+ ┣ 📂 Design Profissional
+ ┗ 📂 Desenvolvimento Front-End
 ```
+## 🛠️ Tecnologias e linguagens
+
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white )
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white )
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=306998 )
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white )
+
+### 📊 Distribuição das linguagens
+
+- **HTML:** 51,9%
+- **CSS:** 23,4%
+- **Python:** 18,8%
+- **C:** 5,9%
+
+### 💻 Ferramentas
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white )
 
 ## 🎯 Objetivo
-
-Manter um registro dos estudos e trabalhos realizados durante o período letivo, facilitando a organização, revisão e acompanhamento do aprendizado.
+Manter um registro organizado dos estudos e trabalhos realizados ao longo do período letivo, facilitando a consulta, a revisão dos conteúdos e o acompanhamento da minha evolução acadêmica.
