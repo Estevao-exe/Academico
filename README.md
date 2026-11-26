@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/README-2ea44f?style=for-the-badge" alt="README em português"/></a>
+  <a href="README.en.md"><img src="https://img.shields.io/badge/README_EN-555555?style=for-the-badge" alt="README in English"/></a>
+</p>
+
 <img align="right" width="100" src="img/teste.gif" alt="scary boy"/>
 
 # 📚 Repositório Acadêmico
