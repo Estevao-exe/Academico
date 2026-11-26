@@ -1,6 +1,6 @@
 🌐 [Português](README.md) | **English**
- 
-<img align="right" width="100" src="img/teste.gif" alt="scary boy"/>
+ <img align="right" width="100" src="img/teste.gif" alt="scary boy"/>
+
 # 📚 Academic Repository
  
 A repository to organize the course content, assignments, projects, and work developed during my studies.
@@ -41,6 +41,7 @@ A repository to organize the course content, assignments, projects, and work dev
 ### By course
  
 <img align="right" width="100" src="img/gatoRoblox.jfif" alt="scary boy"/>
+
 | Course | Technologies |
 | :--- | :--- |
 | 🧠 **Algorithms and Computational Thinking** | <img src="https://go-skill-icons.vercel.app/api/icons?i=python,c&theme=dark" height="40" alt="Python and C"/> |
